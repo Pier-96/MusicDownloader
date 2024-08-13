@@ -6,7 +6,7 @@
       "use": "@vercel/python"
     },
     {
-      "src": "build/**/*",
+      "src": "frontend/build/**/*",
       "use": "@vercel/static-build"
     }
   ],
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "frontend/build/index.html"
     }
   ]
 }
